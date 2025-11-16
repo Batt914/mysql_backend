@@ -40,6 +40,7 @@ app.post("/register", (req, res) => {
     });
 });
 
-app.listen(3000, () => {
-    console.log("Server running on port 3000");
+// IMPORTANT FIX FOR RENDER
+app.listen(process.env.PORT || 3000, () => {
+    console.log("Server running...");
 });
