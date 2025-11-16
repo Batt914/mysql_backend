@@ -8,11 +8,13 @@ app.use(express.json());
 
 // MySQL Connection
 const db = mysql.createConnection({
-    host: "localhost",
+    host: "switchyard.proxy.rlwy.net",
     user: "root",
-    password: "",
-    database: "mysql_app",
+    password: "zljiQgviesJwdfsNXtEKrsUrifXrVHCU",
+    database: "railway",
+    port: 26742
 });
+
 
 // Test Route
 app.get("/", (req, res) => {
